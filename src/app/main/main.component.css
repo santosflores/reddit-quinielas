@@ -1,0 +1,26 @@
+.table {
+    width: 100%;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.example-card {
+    margin: 0 5px 5px 5px;
+}
+
+.mat-icon {
+    font-size: 45px;
+}
+
+.column-header{
+    margin: 0 5px;
+}
