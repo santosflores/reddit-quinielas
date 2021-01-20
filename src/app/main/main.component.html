@@ -28,7 +28,7 @@
             <mat-button-toggle-group *ngIf="leaderboard" #group="matButtonToggleGroup">
                 <mat-button-toggle *ngFor="let item of leaderboard.rounds" 
                                     (click)="updateRound(item.matchday)"                                      
-                                    [disabled]="item.matchday == matchday"
+                                    [checked]="item.matchday == matchday"
                                     value="italic">
                     {{item.matchday}}
                 </mat-button-toggle>

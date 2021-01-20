@@ -14,7 +14,8 @@
 }
 
 .example-card {
-    margin: 0 5px 5px 5px;
+    margin: 0 5px 10px 5px;
+    
 }
 
 .mat-icon {
@@ -22,5 +23,29 @@
 }
 
 .column-header{
-    margin: 0 5px;
+    margin: 0 5px 10px 5px;
+}
+
+.fadeout {animation: 1s linear infinite fadeout;}
+.fadein {animation: 1s linear fadein ;}
+
+@keyframes fadeout{
+    0%{
+        color: #000000;
+    }
+
+    100%{
+        color: #ffffff;
+    }
+}
+
+
+@keyframes fadein{
+    0%{
+        color: #ffffff;
+    }
+
+    100%{
+        color: #000000;
+    }
 }
