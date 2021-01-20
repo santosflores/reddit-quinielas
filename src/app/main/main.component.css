@@ -26,26 +26,10 @@
     margin: 0 5px 10px 5px;
 }
 
-.fadeout {animation: 1s linear infinite fadeout;}
-.fadein {animation: 1s linear fadein ;}
-
-@keyframes fadeout{
-    0%{
-        color: #000000;
-    }
-
-    100%{
-        color: #ffffff;
-    }
-}
-
-
-@keyframes fadein{
-    0%{
-        color: #ffffff;
-    }
-
-    100%{
-        color: #000000;
-    }
+.column-header-title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    padding-bottom: 5px;
 }
