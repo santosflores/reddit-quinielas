@@ -17,6 +17,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatTableModule} from '@angular/material/table';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     MatButtonModule,
     MatGridListModule,
     MatCardModule,
-    MatButtonToggleModule
+    MatButtonToggleModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
