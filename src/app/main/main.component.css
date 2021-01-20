@@ -33,3 +33,8 @@
     font-size: 25px;
     padding-bottom: 5px;
 }
+
+.mat-column-position{
+    width: 55px;
+    font-weight: bold;
+}

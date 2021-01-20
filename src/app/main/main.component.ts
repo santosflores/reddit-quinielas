@@ -9,6 +9,7 @@ import {
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { sheets_v4 } from 'googleapis';
 import { SheetService, Leaderboard, Result } from '../sheet.service';
+import { faSadCry, faGrinAlt } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
   selector: 'app-main',
@@ -24,7 +25,7 @@ import { SheetService, Leaderboard, Result } from '../sheet.service';
 
       })),
       transition('open <=> closed', [
-        animate('1s')
+        animate('.800s')
       ]),
     ]),
   ]
@@ -41,6 +42,8 @@ export class MainComponent implements OnInit {
   loser?: Result;
   matchday: number = 1;
   isOpen = true;
+  faSadCry = faSadCry;
+  faGrinAlt = faGrinAlt; 
 
   toggle() {
     this.isOpen = !this.isOpen;
@@ -57,14 +60,14 @@ export class MainComponent implements OnInit {
         this.winner = this.topRound?.shift();
         this.wallOfShameRound = this.leaderboard?.rounds[this.round].results.sort(this.sheet.sortAsc).slice(0, 5);
         this.loser = this.wallOfShameRound?.shift();
-        this.displayedColumns = ['username', 'score'];
+        this.displayedColumns = ['position','username', 'score'];
       }
     });
   }
 
   async updateRound(matchday: number) {
     this.toggle();
-    await this.sleep(500);
+    await this.sleep(650);
     this.matchday = matchday;
     this.round = this.sheet.getRoundIndex(this.leaderboard, this.matchday);
     this.topRound = this.leaderboard?.rounds[this.round].results.sort(this.sheet.sortDesc).slice(0, 5);
