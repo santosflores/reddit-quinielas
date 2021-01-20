@@ -1,7 +1,11 @@
 <div class="content" role="main">
-  <mat-toolbar color="primary">
-    <span>Reddit Quiniela</span>
-    <span class="example-spacer"></span>    
+  <mat-toolbar class="toolbar">
+      <div style="font-size: 25px">La Quiniela </div>  
+      <div class="example-spacer"></div>
+      <span>r/LigaMx</span>
   </mat-toolbar>
+  <div class="header-spacer">
+    <img *ngFor="let item of images" src="../assets/logos/{{item}}.png" />
+  </div>
   <router-outlet></router-outlet>
 </div>

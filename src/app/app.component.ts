@@ -7,8 +7,27 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reddit-quinielas';
-  
-  constructor() {}
-  
-  
+  images: String[] = [
+    'america', 
+    'atlas', 
+    'cruzazul', 
+    'guadalajara', 
+    'juarez',     
+    'leon', 
+    'mazatlan',
+    'monterrey',
+    'necaxa',
+    'pachuca',
+    'puebla',
+    'pumas',
+    'queretaro',
+    'sanluis',
+    'santos',
+    'tijuana',
+    'labudenl', 
+    'toluca'
+];
+  constructor() { }
+
+
 }

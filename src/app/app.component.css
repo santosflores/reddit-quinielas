@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&display=swap');
+
 .example-spacer {
     flex: 1 1 auto;
+}
+
+.toolbar{
+    background-color: #072146;
+    font-family: 'Open Sans', sans-serif;
+    color: #fafafa;
+}
+
+div.header-spacer {
+    background-color:#f1fafa;
+}
+div.header-spacer img{
+    height: 50px;
+    margin: 10px 5px 10px 0;    
 }
