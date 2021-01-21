@@ -1,5 +1,8 @@
 <div class="row">
-    <div class="column">
+    <div id="header" *ngIf="!leaderboard" class="column-header-title" style="text-align: center;">
+        Loading. <img src="../../assets/ajax-loader.gif"> 
+    </div>
+    <div class="column" *ngIf="leaderboard">
         <div class="column-header">
             <div class="column-header-title">Leaderboard</div>
         </div>
@@ -26,7 +29,7 @@
             </mat-card-content>
         </mat-card>
     </div>
-    <div class="column">
+    <div class="column" *ngIf="leaderboard">
         <div class="column-header">
             <div class="column-header-title">Round</div>
             <mat-button-toggle-group *ngIf="leaderboard" #group="matButtonToggleGroup">
