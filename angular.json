@@ -122,6 +122,10 @@
               "devServerTarget": "reddit-quinielas:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

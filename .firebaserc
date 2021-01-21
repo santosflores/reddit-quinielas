@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "reddit-quinielas": {
+      "hosting": {
+        "reddit-quinielas": [
+          "reddit-quinielas"
+        ]
+      }
+    }
+  }
+}
