@@ -130,5 +130,8 @@
       }
     }
   },
-  "defaultProject": "reddit-quinielas"
+  "defaultProject": "reddit-quinielas",
+  "cli": {
+    "analytics": "5f76593e-2b0d-46ce-98a9-083670ad8acc"
+  }
 }
