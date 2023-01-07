@@ -1,0 +1,36 @@
+# Example on how to trigger a request
+# GET https://example.com/comments/1 HTTP/1.1
+# Content-Type: application/json
+# {
+#     "name":"sample"
+# }
+
+
+
+# LigaMX Clausura ID: 11620
+# "name": "Primera Division, Clausura 2023",
+# "year": "2023",
+# "id": 47656
+# LigaMX Apertura ID: 11621
+
+
+### Gets all tournaments with MX in their name
+GET https://divanscore.p.rapidapi.com/tournaments/search?name='MX' HTTP/1.1
+X-RapidAPI-Key: 3D48SDD7nJmsh5MtF51VSzw0CW7tp1UdFxMjsnRNWYzwXIwHHe
+X-RapidAPI-Host: divanscore.p.rapidapi.com
+
+### Gets all seasons from a tournament
+GET https://divanscore.p.rapidapi.com/tournaments/get-seasons?tournamentId=11620 HTTP/1.1
+X-RapidAPI-Key: 3D48SDD7nJmsh5MtF51VSzw0CW7tp1UdFxMjsnRNWYzwXIwHHe
+X-RapidAPI-Host: divanscore.p.rapidapi.com
+
+### Gets next matches from a season
+GET https://divanscore.p.rapidapi.com/tournaments/get-next-matches?tournamentId=11620&seasonId=47656&pageIndex=0 HTTP/1.1
+X-RapidAPI-Key: 3D48SDD7nJmsh5MtF51VSzw0CW7tp1UdFxMjsnRNWYzwXIwHHe
+X-RapidAPI-Host: divanscore.p.rapidapi.com
+
+
+### Gets last matches from a season
+GET https://divanscore.p.rapidapi.com/tournaments/get-last-matches?tournamentId=11620&seasonId=47656&pageIndex=0 HTTP/1.1
+X-RapidAPI-Key: 3D48SDD7nJmsh5MtF51VSzw0CW7tp1UdFxMjsnRNWYzwXIwHHe
+X-RapidAPI-Host: divanscore.p.rapidapi.com
